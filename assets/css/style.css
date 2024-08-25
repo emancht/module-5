@@ -1,0 +1,51 @@
+/* Navbar link hover effect */
+.navbar .btn:hover,
+.navbar .nav-link:hover {
+  color: #fff !important;
+}
+
+/* Scroll To Top Button CSS */
+#myBtn {
+  font-size: 30px;
+  border: none;
+  outline: none;
+  color: red;
+  border-radius: 50%;
+  cursor: pointer;
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+}
+
+#myBtn:hover {
+  color: blueviolet;
+}
+
+/*  animation effect using Keyframes*/
+#paragraph-text p:first-child {
+  transform: translateY(-1200px);
+  animation: animateOne 2s forwards ease-in;
+}
+
+#paragraph-text p:nth-child(2) {
+  transform: translateX(-1800px);
+  animation: animateTwo 3s forwards ease-in;
+}
+#paragraph-text p:last-child {
+  transform: translateX(1800px);
+  animation: animateTwo 3s forwards ease-in;
+}
+
+@keyframes animateOne {
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes animateTwo {
+  to {
+    transform: translateX(0);
+  }
+}
